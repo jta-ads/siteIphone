@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+}
+header{
+    display: flex;
+    flex-direction: column;
+}
+/* Primeiro Menu */
+#menu-principal{
+    background-color: #333333;
+    display: flex;
+    gap:3rem;
+    justify-content: center;
+}
+#menu-principal ul{
+    display: flex;
+    margin: 1em;
+    gap:5em;
+}
+#menu-principal ul li a{
+    color: white;
+    text-decoration: none; 
+    font-size: .9em;
+    font-weight: bold;
+}
+#menu-principal ul li {
+    list-style:none;
+}
+
+/* SubMenu */
+#submenu{
+    background-color: #FFFFFF;
+    box-shadow: 1px 1px 2px black;
+    padding: .8em;
+    display: flex;
+    justify-content:space-around;
+}
+#submenu ul {
+    display: flex;
+    gap: 3em;
+    align-items: center;
+}
+#submenu ul li{
+    list-style: none;
+}
+#submenu ul li a{
+    color: #333333;
+    text-decoration: none;
+    font-size: .93em;
+}
+#submenu ul li button{
+    color: #FFFFFF;
+    background-color: #0270de;
+    padding: .5em 1.5em;
+    border-radius: 1em;
+    border: none;
+    cursor: pointer;
+}
+#submenu ul li button:hover{
+    opacity: .8;
+    transition: .3s;
+}
+
+/* Terceiro Menu */
+
+#menu-terceiro{
+    background-color: #f4f4f7;
+    text-align: center;
+    font-size: .9em;
+    padding: 1.3em;
+    margin-top: .2em;
+
+}
+
+#menu-terceiro p a{
+    color: #0270de;
+    text-decoration: none;
+}
