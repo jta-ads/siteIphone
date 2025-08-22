@@ -86,3 +86,82 @@ header{
     color: #0270de;
     text-decoration: none;
 }
+/* Main */
+
+main{
+    text-align: center;
+    margin: 1em;
+}
+main > h1{
+    font-size: 4em;
+    margin: 1em .1em
+}
+main > p{
+    width: 28em;
+    text-align: justify;
+    margin: 0 auto;
+    font-size: 1.3em;
+}
+#preco{
+    margin-top: 2.5em;
+    font-weight: normal;
+    color: #93a6ba;
+}
+main > button{
+    margin-top: 3em;
+    color: #FFFFFF;
+    background-color: #0270de;
+    padding: 1em 1.5em;
+    border-radius: 2em;
+    border: none;
+    cursor: pointer;
+    font-size: 1em ;
+}
+main > button:hover{
+    opacity: .8;
+    transition: .3s;
+}
+/* Imagem dos iPhones */
+article{
+    margin-top: 3em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+article button{
+    border: 5px solid rgb(252, 251, 251) ;
+    border-radius: 50%;
+    padding: 2em;
+    box-shadow: 1px 1px 2px black;
+}
+article button:focus{
+    box-shadow: 1px 1px 10px  rgb(13, 13, 229);
+}
+.btn-cor{
+    display: grid;
+    grid-template: 1fr 1fr/repeat(5, 4.2em);
+    column-gap: 3em;
+    row-gap: 1em;
+    margin: 5em;
+
+}
+.btn-cor p{
+    grid-area: 2;
+    font-size: .6em;
+}
+#verde-alpino{
+    background-color: #526134;
+}
+#prateado{
+    background-color:#C0C0C0;
+}
+#dourado{
+    background-color: #D4AF37;
+}
+#grafite{
+    background-color: #41424C;
+}
+#azul-sierra{
+    background-color: #69abce;
+}
