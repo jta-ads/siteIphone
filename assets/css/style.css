@@ -7,10 +7,6 @@
     font-family: "Inter", sans-serif;
 }
 
-body{
-    height: 100vh;
-    width: 100vw;
-}
 header{
     display: flex;
     flex-direction: column;
@@ -129,14 +125,16 @@ article{
     justify-content: center;
     align-items: center;
 }
+
 article button{
     border: 5px solid rgb(252, 251, 251) ;
     border-radius: 50%;
     padding: 2em;
     box-shadow: 1px 1px 2px black;
+    cursor: pointer;
 }
 article button:focus{
-    box-shadow: 1px 1px 10px  rgb(13, 13, 229);
+    outline: 3px solid rgb(13, 13, 229);
 }
 .btn-cor{
     display: grid;
@@ -164,4 +162,35 @@ article button:focus{
 }
 #azul-sierra{
     background-color: #69abce;
+}
+
+@media (min-width: 320px) and (max-width:600px){
+   /* Header */
+    #menu-principal ul{
+        display: none;
+    }
+    #submenu ul li a{
+        display: none;
+    }
+    /* Corpo do site */
+    main p{
+        width:80vw;
+        text-align: center;
+    }
+    article{
+        overflow: hidden;
+        width: 93.8vw;
+    }
+    article img{
+        margin-left: 55em;
+    }
+    /* Botões de Cores */
+    .btn-cor{
+       grid-template: 1fr 1fr/repeat(5, 4em);
+       column-gap: 1em;
+       text-align: center;       
+    }
+    .btn-cor > p{
+        width: 15vw;
+    }
 }
